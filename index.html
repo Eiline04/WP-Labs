@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo" class="logo-image">
+                <div class="logo-text">Ice and Co.<br><small>Have a sweet day!</small></div>
+            </div>
+            
+            <h1 class="company-name">SweetIce</h1>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#" class="active">Register</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <h2> -- Registration form -^^- </h2>
+        <form id="registerForm" novalidate>
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <div class="input-wrapper">
+                    <input type="text" id="name" name="name">
+                    <span class="error-hint" id="nameError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-wrapper">
+                    <input type="text" id="username" name="username">
+                    <span class="error-hint" id="usernameError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="password">
+                    <span class="error-hint" id="passwordError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="repeatPassword">Repeat password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="repeatPassword" name="repeatPassword">
+                    <span class="error-hint" id="repeatPasswordError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email">
+                    <span class="error-hint" id="emailError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="input-wrapper radio-group">
+                    <label><input type="radio" name="gender" value="Male" id="genderMale"> Male</label>
+                    <label><input type="radio" name="gender" value="Female" id="genderFemale"> Female</label>
+                    <span class="error-hint" id="genderError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Telephone</label>
+                <div class="input-wrapper">
+                    <input type="text" id="telephone" name="telephone">
+                    <span class="error-hint" id="telephoneError"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <div class="input-wrapper">
+                    <select id="country" name="country">
+                        <option value="Romania" selected>Romania</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="NL">NL</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subscribe" class="hidden-label">Subscribe</label>
+                <div class="input-wrapper checkbox-wrapper">
+                    Subscribe to maillist <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
